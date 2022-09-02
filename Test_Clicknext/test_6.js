@@ -1,4 +1,4 @@
-function number_sort(num) {
+function number_sort_descending(num) {
     let Array = num.split(',').map(x=>+x);
     let copy = 0;
     for (let r = 0; r < Array.length; r++) {
@@ -16,4 +16,4 @@ function number_sort(num) {
 const prompt = require('prompt-sync')();
 let num = prompt("input:");
 
-console.log(number_sort(num));
+console.log(number_sort_descending(num));
